@@ -1,0 +1,120 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: 'Lato', sans-serif;
+
+}
+
+/* Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap');
+
+.nav-wrapper {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    color: white;
+    z-index: 100;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    transition: background-color 0.3s ease-in-out;
+}
+.nav-wrapper.scrolled {
+    background-color: white;
+    color: black;
+}
+.nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 10px 50px;
+}
+
+.nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.nav-logo img {
+    width: 30px;
+}
+
+.logo-txt {
+    font-weight: bold;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.nav-links ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.nav-links ul li {
+    margin: 0 15px;
+}
+
+.nav-links ul li a {
+    text-decoration: none;
+    color: white;
+}
+.link-scrolled{
+    color: black !important;
+}
+
+.hero-wrapper {
+    background-image: url(../assets/img/hero.gif);
+    text-align: center;
+    background-size: cover;
+    padding: 225px 0px;
+    color: white;
+
+}
+
+.hero-wrapper p {
+    font-family: 'Ms Madi', cursive;
+    font-size: 70px;
+
+}
+.typing-effect{
+    margin-top: 30px;
+}
+#text-output {
+    padding: 5px 0px;
+    color: #1cf27e;
+    font-family: 'Press Start 2P', cursive;
+
+}
+
+
+.slider-container {
+    width: 100%;
+    margin: 0 auto;
+    overflow: hidden;
+    background-color: #d9d9d9;
+
+}
+
+.slider {
+    display: flex;
+    transition: transform 0.5s ease-in-out;
+    text-align: center;
+}
+
+.slide {
+    flex: 0 0 calc(100% / 4);
+    padding: 10px 0px
+}
+
+.slide i {
+    font-size: 50px;
+    margin: 5px;
+    text-shadow: 0px 0px 10px #1cf27e;
+}
